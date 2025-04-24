@@ -181,14 +181,72 @@ else:
 
 
 
-a = int(input("enter the 1st number : "))
-b = int(input("enter the 2nd number : "))
-c = int(input("enter the 3rd number : "))
+# a = int(input("enter the 1st number : "))
+# b = int(input("enter the 2nd number : "))
+# c = int(input("enter the 3rd number : "))
 
-if a > b and a > c:
-    print("a is greater than b and c")
-elif b > a and b > c:
-    print("b is greater than a and c")
-else : 
-    print("c is greater than a and b")
+# if a > b and a > c:
+#     print("a is greater than b and c")
+# elif b > a and b > c:
+#     print("b is greater than a and c")
+# else : 
+#     print("c is greater than a and b")
 
+
+## list and tupples in python:
+
+# mark = [23,24,43]
+# print(mark[1])
+
+# a = ["leo",43.4,56]
+# print(a)
+# print(a.sort())
+# b = [1,4,2,5]
+# print(b.insert(2,3))
+# b.pop(4)
+# print(b)
+# print(b.sort())
+# print(b)
+# print(b.sort(reverse=True))
+# print(b)
+
+# a = [1,0,5,0,30,0,0]
+# print(a.count(0))
+# print(a)
+
+    # wrt the python to enter name of the 3fav. movie & store in the list.
+'''
+u1 = input("enter your favourite movie 1 : ") 
+u2 = input("enter your favourite movie 2 : ") 
+u3 = input("enter your favourite movie 3 : ") 
+
+fav_movie = [u1, u2 , u3]
+print(fav_movie)'''
+
+
+    #  Dictionary and sets :
+dict_ = {
+    "name" : "pranit",
+    "learning" : "coding",
+    "age" : 23,
+    "is_adult" : True
+}
+
+print(dict_)
+
+dict_ ["surname"] = "shrivas"
+print(dict_)
+
+## nested dictionary
+
+student = {
+    'name' : "arvind",
+    "subject" : {"phy" : 54 , "math" : 76 , "chem" : 74} 
+}
+
+print(student)
+
+print(student ['name'])
+print(student["subject"]["math"])
+
+print(student.values())

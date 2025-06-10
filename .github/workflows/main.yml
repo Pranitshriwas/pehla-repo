@@ -1,6 +1,16 @@
 name: Python application
 
-on: [push, pull_request]
+# Define triggers for the workflow
+on:
+  push:  # Runs when code is pushed to the repository
+    branches:
+      - main  # Runs only when pushing to the 'main' branch
+  pull_request:  # Runs when a pull request is opened or updated
+    branches:
+      - main
+  schedule:  # Runs on a schedule (every day at midnight UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
 
 jobs:
   build:
